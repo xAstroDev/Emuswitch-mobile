@@ -48,7 +48,7 @@ jobs:
       - name: Build
         run: |
          chmod +x ./.ci/scripts/android/eabuild.sh
-         bash ./.ci/scripts/android/eabuild.sh
+         sudo bash ./.ci/scripts/android/eabuild.sh
         shell: bash
         env:
           EA_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}
@@ -63,7 +63,7 @@ jobs:
         with:
           tag_name: ${{ env.EA_TAG_NAME }}
           name: ${{ env.EA_TAG_NAME }}
-          draft: false
+          draft: true
           prerelease: false
           repository: xAstroDev/Emuswitch-mobile
           token: ${{ secrets.ALT_GITHUB_TOKEN }}
