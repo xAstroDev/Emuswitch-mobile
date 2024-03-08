@@ -126,7 +126,7 @@ async function tagAndPushEA(github, owner, repo, execa) {
     const newTag = `ea-${tagNumber + 1}`;
     console.log(`New tag: ${newTag}`);
     console.info('Pushing tags to GitHub ...');
-    await execa("git", ["remote", "add", "android", "https://github.com/xastrodev/emuswitch-mobile-android.git"]);
+    await execa("git", ["remote", "add", "android", "https://github.com/xastrodev/emuswitch-mobile.git"]);
     await execa("git", ["fetch", "android"]);
 
     await execa("git", ['tag', newTag]);
@@ -251,16 +251,16 @@ async function getPulls(github) {
         }
     }`;
     const mainlineVariables = {
-        owner: 'yuzu-emu',
-        name: 'yuzu',
+        owner: 'xAstroDev',
+        name: 'Emuswitch-mobile',
         label: CHANGE_LABEL_MAINLINE,
     };
     const mainlineResult = await github.graphql(query, mainlineVariables);
     const pulls = mainlineResult.repository.pullRequests.nodes;
     if (BUILD_EA) {
         const eaVariables = {
-            owner: 'yuzu-emu',
-            name: 'yuzu',
+            owner: 'xAstroDev',
+            name: 'Emuswitch-mobile',
             label: CHANGE_LABEL_EA,
         };
         const eaResult = await github.graphql(query, eaVariables);
@@ -274,7 +274,7 @@ async function getMainlineTag(execa) {
     console.log(`::group::Getting mainline tag android-${MAINLINE_TAG}`);
     let hasFailed = false;
     try {
-        await execa("git", ["remote", "add", "mainline", "https://github.com/xastrodev/emuswitch-mobile-android.git"]);
+        await execa("git", ["remote", "add", "mainline", "https://github.com/xastrodev/emuswitch-mobile.git"]);
         await execa("git", ["fetch", "mainline", "--tags"]);
         await execa("git", ["checkout", `tags/android-${MAINLINE_TAG}`]);
         await execa("git", ["submodule", "update", "--init", "--recursive"]);
