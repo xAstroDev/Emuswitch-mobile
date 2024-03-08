@@ -46,7 +46,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ccache apksigner glslang-dev glslang-tools
       - name: Build
-        run: ./.ci/scripts/android/eabuild.sh
+        run: |
+         chmod +x ./.ci/scripts/android/eabuild.sh
+         ./.ci/scripts/android/eabuild.sh
+        shell: bash
         env:
           EA_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}
           PLAY_ANDROID_KEY_ALIAS: ${{ secrets.PLAY_ANDROID_KEY_ALIAS }}
@@ -62,5 +65,5 @@ jobs:
           name: ${{ env.EA_TAG_NAME }}
           draft: false
           prerelease: false
-          repository: yuzu/yuzu-android
+          repository: xAstroDev/Emuswitch-mobile
           token: ${{ secrets.ALT_GITHUB_TOKEN }}
