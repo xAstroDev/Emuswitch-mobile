@@ -1,9 +1,9 @@
 | Pull Request | Commit | Title | Author | Merged? |
 |----|----|----|----|----|
-| [12461](https://github.com/yuzu-emu/yuzu//pull/12461) | [`7464cae24`](https://github.com/yuzu-emu/yuzu//pull/12461/files) | Rework Nvdec and VIC to fix out-of-order videos, and speed up decoding. | [Kelebek1](https://github.com/Kelebek1/) | Yes |
-| [13018](https://github.com/yuzu-emu/yuzu//pull/13018) | [`01cbc638a`](https://github.com/yuzu-emu/yuzu//pull/13018/files) | am: rewrite part 2 | [liamwhite](https://github.com/liamwhite/) | Yes |
-| [13174](https://github.com/yuzu-emu/yuzu//pull/13174) | [`7d1284826`](https://github.com/yuzu-emu/yuzu//pull/13174/files) | glue/time: Remove global variables | [FearlessTobi](https://github.com/FearlessTobi/) | Yes |
-| [13177](https://github.com/yuzu-emu/yuzu//pull/13177) | [`f5cc94f05`](https://github.com/yuzu-emu/yuzu//pull/13177/files) | vfs: misc performance improvements | [liamwhite](https://github.com/liamwhite/) | Yes |
+| [12461](https://github.com/xastrodev/emuswitch-mobile//pull/12461) | [`7464cae24`](https://github.com/xastrodev/emuswitch-mobile//pull/12461/files) | Rework Nvdec and VIC to fix out-of-order videos, and speed up decoding. | [Kelebek1](https://github.com/Kelebek1/) | Yes |
+| [13018](https://github.com/xastrodev/emuswitch-mobile//pull/13018) | [`01cbc638a`](https://github.com/xastrodev/emuswitch-mobile//pull/13018/files) | am: rewrite part 2 | [liamwhite](https://github.com/liamwhite/) | Yes |
+| [13174](https://github.com/xastrodev/emuswitch-mobile//pull/13174) | [`7d1284826`](https://github.com/xastrodev/emuswitch-mobile//pull/13174/files) | glue/time: Remove global variables | [FearlessTobi](https://github.com/FearlessTobi/) | Yes |
+| [13177](https://github.com/xastrodev/emuswitch-mobile//pull/13177) | [`f5cc94f05`](https://github.com/xastrodev/emuswitch-mobile//pull/13177/files) | vfs: misc performance improvements | [liamwhite](https://github.com/liamwhite/) | Yes |
 
 
 End of merge log. You can find the original README.md below the break.
@@ -29,8 +29,8 @@ It is written in C++ with portability in mind, and we actively maintain builds f
 </h4>
 
 <p align="center">
-    <a href="https://dev.azure.com/yuzu-emu/yuzu/">
-        <img src="https://dev.azure.com/yuzu-emu/yuzu/_apis/build/status/yuzu%20mainline?branchName=master"
+    <a href="https://dev.azure.com/xastrodev/emuswitch-mobile/">
+        <img src="https://dev.azure.com/xastrodev/emuswitch-mobile/_apis/build/status/yuzu%20mainline?branchName=master"
             alt="Azure Mainline CI Build Status">
     </a>
     <a href="https://discord.com/invite/u77vRWY">
@@ -58,17 +58,17 @@ Check out our [website](https://yuzu-emu.org/) for the latest news on exciting f
 
 ## Development
 
-Most of the development happens on GitHub. It's also where [our central repository](https://github.com/yuzu-emu/yuzu) is hosted. For development discussion, please join us on [Discord](https://discord.com/invite/u77vRWY).
+Most of the development happens on GitHub. It's also where [our central repository](https://github.com/xastrodev/emuswitch-mobile) is hosted. For development discussion, please join us on [Discord](https://discord.com/invite/u77vRWY).
 
-If you want to contribute, please take a look at the [Contributor's Guide](https://github.com/yuzu-emu/yuzu/wiki/Contributing) and [Developer Information](https://github.com/yuzu-emu/yuzu/wiki/Developer-Information).
+If you want to contribute, please take a look at the [Contributor's Guide](https://github.com/xastrodev/emuswitch-mobile/wiki/Contributing) and [Developer Information](https://github.com/xastrodev/emuswitch-mobile/wiki/Developer-Information).
 You can also contact any of the developers on Discord in order to know about the current state of the emulator.
 
 If you want to contribute to the user interface translation project, please check out the [yuzu project on transifex](https://www.transifex.com/yuzu-emulator/yuzu). We centralize translation work there, and periodically upstream translations.
 
 ## Building
 
-* __Windows__: [Windows Build](https://github.com/yuzu-emu/yuzu/wiki/Building-For-Windows)
-* __Linux__: [Linux Build](https://github.com/yuzu-emu/yuzu/wiki/Building-For-Linux)
+* __Windows__: [Windows Build](https://github.com/xastrodev/emuswitch-mobile/wiki/Building-For-Windows)
+* __Linux__: [Linux Build](https://github.com/xastrodev/emuswitch-mobile/wiki/Building-For-Linux)
 
 ## Download
 
@@ -94,4 +94,4 @@ If you wish to support us a different way, please join our [Discord](https://dis
 
 ## License
 
-yuzu is licensed under the GPLv3 (or any later version). Refer to the [LICENSE.txt](https://github.com/yuzu-emu/yuzu/blob/master/LICENSE.txt) file.
+yuzu is licensed under the GPLv3 (or any later version). Refer to the [LICENSE.txt](https://github.com/xastrodev/emuswitch-mobile/blob/master/LICENSE.txt) file.
