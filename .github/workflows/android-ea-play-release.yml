@@ -48,7 +48,7 @@ jobs:
       - name: Build
         run: |
          chmod +x ./.ci/scripts/android/eabuild.sh
-         ./.ci/scripts/android/eabuild.sh
+         bash ./.ci/scripts/android/eabuild.sh
         shell: bash
         env:
           EA_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}
