@@ -25,8 +25,8 @@ async function checkBaseChanges(github) {
         }
     }`;
     const variables = {
-        owner: 'yuzu-emu',
-        name: 'yuzu',
+        owner: 'xAstroDev',
+        name: 'Emuswitch-mobile',
         ref: 'refs/heads/master',
     };
     const result = await github.graphql(query, variables);
