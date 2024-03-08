@@ -46,8 +46,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ccache apksigner glslang-dev glslang-tools
       - name: Build
-        working-directory: .ci/scripts/android
-        run: sh ./.ci/scripts/android/eabuild.sh
+        run: |
+         ./.ci/scripts/android/eabuild.sh
         env:
           EA_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}
           PLAY_ANDROID_KEY_ALIAS: ${{ secrets.PLAY_ANDROID_KEY_ALIAS }}
