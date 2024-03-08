@@ -195,7 +195,7 @@ async function mergePullRequests(pulls, execa) {
             process1.stdout.pipe(process.stdout);
             await process1;
 
-            const process2 = execa("git", ["commit", "-m", `Merge yuzu-emu#${pr}`]);
+            const process2 = execa("git", ["commit", "-m", `Merge emuswitch#${pr}`]);
             process2.stdout.pipe(process.stdout);
             await process2;
 
@@ -304,10 +304,10 @@ async function mergebot(github, context, execa) {
     const mergeResults = await mergePullRequests(pulls, execa);
 
     if (BUILD_EA) {
-        await tagAndPushEA(github, 'yuzu-emu', `yuzu-android`, execa);
+        await tagAndPushEA(github, 'xAstroDev', `emuswitch-mobile`, execa);
     } else {
         await generateReadme(pulls, context, mergeResults, execa);
-        await tagAndPush(github, 'yuzu-emu', `yuzu-android`, execa, true);
+        await tagAndPush(github, 'xAstroDev', `emuswitch-mobile`, execa, true);
     }
 }
 
