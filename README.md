@@ -1,5 +1,13 @@
 | Pull Request | Commit | Title | Author | Merged? |
 |----|----|----|----|----|
+
+
+End of merge log. You can find the original README.md below the break.
+
+-----
+
+| Pull Request | Commit | Title | Author | Merged? |
+|----|----|----|----|----|
 | [12461](https://github.com/xastrodev/emuswitch-mobile//pull/12461) | [`7464cae24`](https://github.com/xastrodev/emuswitch-mobile//pull/12461/files) | Rework Nvdec and VIC to fix out-of-order videos, and speed up decoding. | [Kelebek1](https://github.com/Kelebek1/) | Yes |
 | [13018](https://github.com/xastrodev/emuswitch-mobile//pull/13018) | [`01cbc638a`](https://github.com/xastrodev/emuswitch-mobile//pull/13018/files) | am: rewrite part 2 | [liamwhite](https://github.com/liamwhite/) | Yes |
 | [13174](https://github.com/xastrodev/emuswitch-mobile//pull/13174) | [`7d1284826`](https://github.com/xastrodev/emuswitch-mobile//pull/13174/files) | glue/time: Remove global variables | [FearlessTobi](https://github.com/FearlessTobi/) | Yes |
